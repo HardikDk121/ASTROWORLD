@@ -1,4 +1,4 @@
-var back = document.getElementById('back');
+/*var back = document.getElementById('back');
 var forward = document.getElementById('forward');
 
 back.addEventListener('click',function () 
@@ -9,3 +9,4 @@ back.addEventListener('click',function ()
     {
         console.log("forward click kairu");
     });
+*/

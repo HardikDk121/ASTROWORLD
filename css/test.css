@@ -1,0 +1,31 @@
+
+.calendar
+{
+    height: 75%;
+    width: 100%;
+}
+.week
+{
+    height: 20%;
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+.day
+{
+    align-content: center;
+    text-align: center;
+    font-size: larger;
+    width: 14.2857%;
+    
+}
+.last-three-days
+{
+    height: 20%;
+    width: inherit;
+    display: flex;
+}
+span:hover
+{
+    color: red;
+}
