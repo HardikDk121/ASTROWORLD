@@ -30,11 +30,6 @@ body
     height: 100%;
     width: 100%;
 }
-
-
-
-
-
 nav
 {
     width: 100%;
@@ -73,69 +68,33 @@ li:hover
     background-image: linear-gradient(to right, #4b0082, #80007d, #a80075, #c8006a, #e12e5e);
 }
 
-
-
-
-
-.content
+.calendar
 {
+    height: 75%;
     width: 100%;
-    height: 85%;
-    text-align: center;
-    background-image: url('/images/background-1.jpg');
-    align-content: center;
 }
-.heading
+.week
 {
-    font-size: var(--heading-size);
-    box-shadow: 10px 5px 5px 10px black;
-}
-.description{
-    font-size: var(--p-size);
-}
-.buttons
-{
-    
-    height: 50px;
-    width: 150px;
-   
-    border: 3px solid whitesmoke;
-    border-radius: 3px;
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    padding: 5px;
-    margin: 10px;
+    height: 20%;
+    width: inherit;
+    display: flex;
     justify-content: space-between;
 }
-.buttons:hover
+.day
 {
-    background-image: linear-gradient(to right, #4b0082, #80007d, #a80075, #c8006a, #e12e5e);
+    align-content: center;
+    text-align: center;
+    font-size: larger;
+    width: 14.2857%;
     
 }
-.logo
+.last-three-days
 {
-    
-    margin-top: 0px;
-    width:16px;
-    height: 16px;
-    background-color: white;
-    background: transparent;
+    height: 20%;
+    width: inherit;
+    display: flex;
 }
-
-
-
-
-.footer
+span:hover
 {
-    width:100%;
-    height:15%;
-    
-    border-top: 5px ;
-
+    color: red;
 }
-
-
-
-
-

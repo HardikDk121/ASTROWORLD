@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+        body {
+            color: white;
+            font-family: "Space Grotesk", system-ui;
+            background-color: black;
+        }
+
+        .calender {
+            height: 60%;
+            width: 100%;
+
+            background-color: black;
+
+        }
+        .back:hover,.forward:hover
+        {
+           color: red;
+        }
+        .week {
+            display: flex;
+            height: 20%;
+            width: 100%;
+        }
+
+        .week:not(:first-child){
+            margin-top: -2px;
+            /* Use negative margin to overlap borders */
+        }
+        .week:last-child
+        {
+            
+        }
+
+        .day {
+            height: 100px;
+            width: 14.29%;
+            border: 2px solid white;
+            border-radius: 2px;
+            border-collapse: collapse;
+        }
+
+        .day:not(:first-child) {
+            margin-left: -2px;
+            /* Use negative margin to overlap borders */
+        }
+
+
+        .date {
+            height: 20%;
+            margin: auto;
+            width: 80%;
+
+            border-radius: 5px;
+
+        }
+
+        .evenets {
+            width: 80%;
+            height: 80%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .event {
+            margin: 5px;
+            font-size: 0.7rem;
+            background-color: #4b0082;
+            border-radius: 5px;
+        }
+        .event:hover {
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+    </style>
+    <script src="/js/scripts.js" defer></script>
+</head>
+
+<body>
+    <div class="calender">
+        <div class="month">
+             <span class="back" id="back"> < </span>
+             <span id="currentMonth"> </span>
+             <span class="forward" id="forward" > > </span>
+        </div>
+        <div class="week">
+
+            <div class="day">
+                <p class="date">1</p>
+                <div class="events">
+
+
+                </div>
+            </div>
+            <div class="day">
+                <p class="date">2</p>
+                <div class="events">
+                    <p class="event">Eclipse</p>
+                    <p class="event">meteor shower</p>
+
+                </div>
+            </div>
+            <div class="day">
+                <p class="date">3</p>
+                <div class="events">
+
+                </div>
+            </div>
+            <div class="day">
+                <p class="date">4</p>
+                <div class="events">
+
+                </div>
+            </div>
+            <div class="day">
+                <p class="date">5</p>
+                <div class="events">
+                    <p class="event">Eclipse</p>
+                    <p class="event">meteor shower</p>
+
+                </div>
+            </div>
+            <div class="day">
+                <p class="date">6</p>
+                <div class="events">
+                    <p class="event">Eclipse</p>
+                    <p class="event">meteor shower</p>
+
+                </div>
+            </div>
+            <div class="day">
+                <p class="date">7</p>
+                <div class="events">
+
+
+                </div>
+            </div>
+        </div>
+        <div class="week">
+
+            <div class="day">
+                <p class="date">8</p>
+                <div class="events">
+
+                </div>
+            </div>
+            <div class="day">
+                <p class="date">9</p>
+                <div class="events">
+
+                </div>
+            </div>
+            <div class="day">
+                <p class="date">10</p>
+                <div class="events">
+
+                </div>
+            </div>
+            <div class="day">
+                <p class="date">11</p>
+                <div class="events">
+                    <p class="event">Eclipse</p>
+                    <p class="event">meteor shower</p>
+
+                </div>
+            </div>
+            <div class="day">
+                <p class="date">12</p>
+                <div class="events">
+
+                </div>
+            </div>
+            <div class="day">
+                <p class="date">13</p>
+                <div class="events">
+                    <p class="event">Eclipse</p>
+                    <p class="event">meteor shower</p>
+
+                </div>
+            </div>
+            <div class="day">
+                <p class="date">14</p>
+                <div class="events">
+
+                </div>
+            </div>
+        </div>
+        <div class="week">
+
+            <div class="day">
+                <p class="date">15</p>
+                <div class="events">
+
+
+                </div>
+            </div>
+            <div class="day">
+                <p class="date">16</p>
+                <div class="events">
+
+
+                </div>
+            </div>
+            <div class="day">
+                <p class="date">17</p>
+                <div class="events">
+
+
+                </div>
+            </div>
+            <div class="day">
+                <p class="date">18</p>
+                <div class="events">
+
+
+                </div>
+            </div>
+            <div class="day">
+                <p class="date">19</p>
+                <div class="events">
+
+
+                </div>
+            </div>
+            <div class="day">
+                <p class="date">20</p>
+                <div class="events">
+
+
+                </div>
+            </div>
+            <div class="day">
+                <p class="date">21</p>
+                <div class="events">
+
+
+                </div>
+            </div>
+        </div>
+        <div class="week">
+
+            <div class="day">
+                <p class="date">22</p>
+                <div class="events">
+                </div>
+            </div>
+
+            <div class="day">
+                <p class="date">23</p>
+                <div class="events">
+
+                </div>
+            </div>
+            <div class="day">
+                <p class="date">24</p>
+                <div class="events">
+
+                </div>
+            </div>
+            <div class="day">
+                <p class="date">25</p>
+                <div class="events">
+
+                </div>
+            </div>
+            <div class="day">
+                <p class="date">26</p>
+                <div class="events">
+
+
+                </div>
+            </div>
+            <div class="day">
+                <p class="date">27</p>
+                <div class="events">
+                    <p class="event">Eclipse</p>
+                    <p class="event">meteor shower</p>
+
+                </div>
+            </div>
+            <div class="day">
+                <p class="date">28</p>
+                <div class="events">
+
+                </div>
+            </div>
+        </div>
+        <div class="week ">
+
+            <div class="day ">
+                <p class="date">29</p>
+                <div class="events">
+                </div>
+            </div>
+
+            <div class="day">
+                <p class="date">30</p>
+                <div class="events">
+
+                </div>
+            </div>
+            <div class="day">
+                <p class="date">31</p>
+                <div class="events">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
