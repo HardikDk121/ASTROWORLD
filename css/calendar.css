@@ -1,0 +1,48 @@
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 20px;
+}
+.month
+{
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 8;
+}
+.day
+{
+    box-shadow: 5px 2px 4px #181818;
+    border: 1px solid #181818;
+    border-radius: 2px;  
+    background-color: white;
+    color: #181818;
+}
+
+.date
+{
+    width: 80%;
+    margin: auto;
+    font-weight: lighter;
+}
+.events
+{
+    margin: auto;
+    width: 80%;   
+}
+.event
+{
+    padding: auto;
+    background-color: #e12e5e;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    font-size: smaller;
+    transition: .2s;
+}
+.event:hover
+{
+    transform: translateY(-0.3rem);
+    scale:1.05;
+    cursor: pointer;
+}

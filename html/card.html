@@ -21,48 +21,48 @@
             background-color: black;
 
         }
-        .back:hover,.forward:hover
+        .monthbuttons:hover
         {
            color: red;
         }
+        
+
         .week {
             display: flex;
             height: 20%;
             width: 100%;
         }
-
+        
         .week:not(:first-child){
             margin-top: -2px;
-            /* Use negative margin to overlap borders */
-        }
-        .week:last-child
-        {
             
         }
-
+        
+        
         .day {
             height: 100px;
-            width: 14.29%;
+            flex: 1;
             border: 2px solid white;
             border-radius: 2px;
             border-collapse: collapse;
         }
-
+        
         .day:not(:first-child) {
             margin-left: -2px;
-            /* Use negative margin to overlap borders */
+           
         }
+        
 
-
+        
         .date {
             height: 20%;
             margin: auto;
             width: 80%;
-
+            
             border-radius: 5px;
-
+            
         }
-
+        
         .evenets {
             width: 80%;
             height: 80%;
@@ -73,7 +73,7 @@
         }
 
         .event {
-            margin: 5px;
+            
             font-size: 0.7rem;
             background-color: #4b0082;
             border-radius: 5px;
@@ -89,9 +89,9 @@
 <body>
     <div class="calender">
         <div class="month">
-             <span class="back" id="back"> < </span>
+             <span class="monthbuttons" id="back"> < </span>
              <span id="currentMonth"> </span>
-             <span class="forward" id="forward" > > </span>
+             <span class="monthbuttons" id="forward" > > </span>
         </div>
         <div class="week">
 
@@ -295,11 +295,12 @@
                 </div>
             </div>
         </div>
-        <div class="week ">
+        <div class="week last-three-day">
 
             <div class="day ">
                 <p class="date">29</p>
                 <div class="events">
+                
                 </div>
             </div>
 
@@ -309,7 +310,7 @@
 
                 </div>
             </div>
-            <div class="day">
+            <div class="day ">
                 <p class="date">31</p>
                 <div class="events">
                 </div>
