@@ -9,10 +9,11 @@
     width: 100%;
     grid-column-start: 1;
     grid-column-end: 8;
+    height: 20%;
 }
 .day
 {
-    box-shadow: 5px 2px 4px #181818;
+    box-shadow: -5px 2px 4px rgb(14, 79, 133);
     border: 1px solid #181818;
     border-radius: 2px;  
     background-color: white;
@@ -38,11 +39,12 @@
     border-radius: 5px;
     color: white;
     font-size: smaller;
-    transition: .2s;
+    transition: .4s;
 }
 .event:hover
 {
     transform: translateY(-0.3rem);
     scale:1.05;
     cursor: pointer;
+
 }

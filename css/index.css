@@ -48,9 +48,11 @@ main
 {
     font-size: var(--heading-size);
     box-shadow: 10px 5px 5px 10px black;
+    margin-bottom:2rem ;
 }
 .description{
     font-size: var(--p-size);
+    margin-bottom: 2rem;
 }
 .buttons
 {
