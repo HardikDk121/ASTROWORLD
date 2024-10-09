@@ -10,7 +10,6 @@ body
     height: 100%;
     width: 100%;
     background-color: black;
-    color: white;
 }
 
 header
@@ -96,14 +95,13 @@ footer
 }
 .icon:hover
 {
-    
-    background-clip:content-box;
+    background-image: linear-gradient(to right top, #1a5fc4, #8648b4, #bb1e8d, #d40059, #d11d1d);
+    background-clip:text;
     color:transparent
 }
 .footerlinks
 {
     display: flex;
-  
     width: 100%;
     font-weight: lighter;
 }
