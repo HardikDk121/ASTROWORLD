@@ -24,7 +24,7 @@ function updateMonthDays(monthIndex, year) {
     for (var i = 1; i <= daysInMonth; i++) {
         var dayDiv = document.createElement('div');
         dayDiv.classList.add('day');
-        dayDiv.textContent = i;
+        dayDiv.innerHTML = '<p class="date">'+i + '</p>';
         
         
         var eventsDiv = document.createElement('div');

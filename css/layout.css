@@ -73,13 +73,38 @@ main
 footer
 {
     width: 100%;
-    height: 10%;
+    height: fit-content;
     box-shadow: -1px -5px 4px white ;
+    background-image: url('/images/background-images/color-space-doodle/19333447.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+.credits
+{
+    width: 75%;
+    height: fit-content;
+}
+.credits p
+{
+
+    border-radius: 2px;
+    width: fit-content;
+
+}
+.credits ul li a:hover
+{
+    color: rgb(23, 165, 49);
 }
 .socials-media
 {
     
-    width: 100%;
+    width: 25%;
+}
+.credit
+{
+    color: white;
+    width: 50%;
 }
 .socials
 {
@@ -87,6 +112,7 @@ footer
     height: 100%;
     display: flex;
     justify-content: center;
+    align-items:center;
 }
 .icon
 {

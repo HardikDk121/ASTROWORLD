@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calender</title>    
+    <title>Document</title>
     <link rel="stylesheet" href="/css/layout.css">
     <link rel="stylesheet" href="/css/calendar.css">
+    <script src="/js/calendar.js" defer></script>
     <script src="https://kit.fontawesome.com/ebceefdc6a.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <div class="container">
@@ -28,221 +29,20 @@
         </header>
 
         <main class="main">
- 
-    <div class="month">
-        <span class="monthbuttons" id="back">
-            < </span>
-            <span id="currentMonth"> </span>
-            <span class="monthbuttons" id="forward"> > </span>
-        </div> 
-
-   
-            
-            <div class="day">
-                <p class="date">1</p>
-                <div class="events">
-                    
-                </div>
-            </div>
-            <div class="day">
-                <p class="date">2</p>
-                <div class="events">
-                    
-                </div>
-            </div>
-            <div class="day">
-                <p class="date">3</p>
-                <div class="events">
-                </div>
-            </div>
-            <div class="day">
-                <p class="date">4</p>
-                <div class="events">
-                    
-                </div>
-            </div>
-            <div class="day">
-                <p class="date">5</p>
-                <div class="events">
-
-                </div>
-            </div>
-            <div class="day">
-                <p class="date">6</p>
-                <div class="events">
-                    
-                </div>
-            </div>
-            <div class="day">
-                <p class="date">7</p>
-                <div class="events">
-                    <p class="event">Eclipse</p>
-                    <p class="event">meteor shower</p>
-                </div>
+            <div class="month">
+                    <span class="monthbuttons" id="back"><</span>
+                    <span id="currentMonth">  </span>
+                    <span id="currentYear">  </span> <!-- Add this span for the year -->
+                    <span class="monthbuttons" id="forward"> > </span>
+            </div>                
+            <div id="day-container" class="day-container">
+                
             </div>
             
-            
-            <div class="day">
-                <p class="date">8</p>
-                <div class="events">
-                    <p class="event">Eclipse</p>
-                    
-                </div>
-            </div>
-            <div class="day">
-                <p class="date">9</p>
-                <div class="events">
-                    
-                    <p class="event">meteor shower</p>
-                </div>
-            </div>
-            <div class="day">
-                <p class="date">10</p>
-                <div class="events">
-                    
-                </div>
-            </div>
-            <div class="day">
-                <p class="date">11</p>
-                <div class="events">
-                    
-                </div>
-            </div>
-            <div class="day">
-                <p class="date">12</p>
-                <div class="events">
-                    
-                </div>
-            </div>
-            <div class="day">
-                <p class="date">13</p>
-                <div class="events">
-                    
-                </div>
-            </div>
-            <div class="day">
-                <p class="date">14</p>
-                <div class="events">
-                    
-                </div>
-            </div>
-            
-            
-            <div class="day">
-                <p class="date">15</p>
-                <div class="events">
-                    
-                </div>
-            </div>
-            <div class="day">
-                <p class="date">16</p>
-                <div class="events">
-                    
-                </div>
-            </div>
-            <div class="day">
-                <p class="date">17</p>
-                <div class="events">
-                    
-                </div>
-            </div>
-            <div class="day">
-                <p class="date">18</p>
-                <div class="events">
-                    
-                </div>
-            </div>
-            <div class="day">
-                <p class="date">19</p>
-                <div class="events">
-                    
-                </div>
-            </div>
-            <div class="day">
-                <p class="date">20</p>
-                <div class="events">
-                    
-                </div>
-            </div>
-            <div class="day">
-                <p class="date">21</p>
-                <div class="events">
-                    
-                </div>
-            </div>
-            
-            
-            <div class="day">
-                <p class="date">22</p>
-                <div class="events">
-                    
-                </div>
-            </div>
-            <div class="day">
-                <p class="date">23</p>
-                <div class="events">
-                    
-                </div>
-            </div>
-            <div class="day">
-                <p class="date">24</p>
-                <div class="events">
-                    <p class="event">Eclipse</p>
-                    <p class="event">meteor shower</p>
-                </div>
-            </div>
-            <div class="day">
-                <p class="date">25</p>
-                <div class="events">
-                    
-                </div>
-            </div>
-            <div class="day">
-                <p class="date">26</p>
-                <div class="events">
-                    
-                </div>
-            </div>
-            <div class="day">
-                <p class="date">27</p>
-                <div class="events">
-                    
-                </div>
-            </div>
-            <div class="day">
-                <p class="date">28</p>
-                <div class="events">
-                    
-                </div>
-            </div>
-            
-            
-            
-            <div class="day">
-                <p class="date">29</p>
-                <div class="events">
-                    <p class="event">Eclipse</p>
-                    
-                </div>
-            </div>
-            <div class="day">
-                <p class="date">30</p>
-                <div class="events">
-                    
-                </div>
-            </div>
-            <div class="day">
-                <p class="date">31</p>
-                <div class="events">
-                    
-                    <p class="event">meteor shower</p>
-                </div>
-            </div>
-            
-        
         </main>
-        
+
         <footer>
+
             <nav class="socials-media">
                 <ul class="links socials">
                     <li class="link social">
@@ -255,9 +55,8 @@
                         <a href=""><i class="fa-brands fa-instagram icon"></i></a>
                     </li>
                 </ul>
-            </nav>    
+            </nav>
         </footer>
     </div>
 </body>
-
 </html>

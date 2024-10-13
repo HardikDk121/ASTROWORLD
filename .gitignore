@@ -1,3 +1,11 @@
 /html/header.html
 
 /html/footer.html
+# Ignore node_modules directory
+node_modules/
+
+# Ignore yarn error logs
+.yarn-error.log
+
+# Optional: Ignore lockfile if not needed
+yarn.lock
