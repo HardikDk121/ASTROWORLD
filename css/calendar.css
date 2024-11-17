@@ -7,15 +7,21 @@ body
     grid-template-columns: repeat(10,1fr);
     grid-template-rows: 0.5fr, repeat(4,1fr);
     margin: 0px;
-    background-image: url('/images/background-images/wallpaperflare.com_wallpaper.jpg');
+    background-image: url('/images/background-images/planet-space-cartoon-vector-icon-illustration-science-technology-icon-isolated-flat-vector/89dbdf7b-61c3-4ec9-82c1-4bd153d84603.jpg');
     background-clip: inset;
     background-size: cover;
+    overflow-y:scroll;
+}
+.main::-webkit-scrollbar
+{
+    display: none;    
 }
 .month
 {
     grid-row: 1 / 1;
     grid-column: 1 / 11;
     font-size: 3rem;
+    
     
 }
 .day-container
@@ -36,7 +42,7 @@ body
     
     border: 1px solid white;
     border-radius: 5px;  
-    background-color: rgba(255, 254, 254, 0.0.5);
+    background-color: rgba(6, 4, 4,0.5);
     color: white;
     margin: 20px 20px;
     

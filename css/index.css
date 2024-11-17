@@ -5,43 +5,23 @@
     --heading-size:10rem;
     --p-size:4rem;
 }
-html
-{
-    height: 100%;
-    width: 100%;
-}
+
 body
 {
     margin: 0px;
-
     font-style: normal;
     height: 100%;
     width: 100%;
     background-color: rgb(19, 18, 18);
     background-size:auto;
-    color: #ffffff;
-    
      /* Stroke size and color */
-    
 }
-.container
-{
-    height: 100%;
-    width: 100%;
-}
-
-
-
-
-
-
-
 main
 {
-    width: 100%;
-    height: 85%;
+
     text-align: center;
-    background-image: url('/images/background-images/background-1.jpg');
+    background-image: url('/images/background-images/color-space-doodle/19333447.jpg');
+    background-size:cover;
     align-content: center;
 }
 .heading
@@ -87,14 +67,7 @@ main
 
 
 
-.footer
-{
-    width:100%;
-    height:15%;
-    
-    border-top: 5px ;
 
-}
 
 
 

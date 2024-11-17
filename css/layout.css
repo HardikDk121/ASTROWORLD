@@ -1,17 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+::-webkit-scrollbar
+{
+    width: 1rem;
+}
+::-webkit-scrollbar-track
+{
+    background-color: #18004c;
+    border-radius: 1rem;
+    margin-block: 5px;
+    
+}
+::-webkit-scrollbar-thumb
+{
+    background-color:#5f248aed;
+    border-radius: 1rem;
+    
+}
 html
 {
     height: 100%;
     width: 100%;
 }
+
 body
 {   
+    overflow-x: hidden ;
     font-family: "Space Grotesk", system-ui;
     height: 100%;
     width: 100%;
     background-color: black;
+    color: #ffffff;
 }
-
+.container
+{
+    height: 100%;
+    width: 100%;
+}
 header
 {
     height: 5%;
@@ -61,7 +85,7 @@ main
 {  
    
    text-align: center;
-   width: 33.333%;
+   width: 20%;
    height: 100%;
    
 }
@@ -75,7 +99,7 @@ footer
     width: 100%;
     height: fit-content;
     box-shadow: -1px -5px 4px white ;
-    background-image: url('/images/background-images/color-space-doodle/19333447.jpg');
+    background-image: url('/images/background-images/space-seamless-pattern-black-white-version/38816.jpg');
     background-size: cover;
     display: flex;
     justify-content: space-between;
