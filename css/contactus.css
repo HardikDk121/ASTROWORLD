@@ -1,0 +1,107 @@
+main
+{
+    background-image: url('/images/background-images/color-seamless-space-pattern/19333449.jpg');
+    background-size: cover;
+    overflow-y: scroll;
+}
+.heading
+{
+    font-weight: bold;
+    font-size: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+    font-weight: lighter;
+    text-align: center;   
+}
+.subheading
+{
+    font-family: "Montserrat", sans-serif;
+    margin-top: 1rem;
+    font-weight:lighter;
+    text-align: center;
+    font-size: 2rem;
+    opacity: 0.8;
+}
+.contactdetails
+{
+    background-color: #7a7485;
+    border:5px solid black;
+    border-radius:5px;
+    margin: auto;
+    width: 50%;
+    
+}
+.labels
+{
+    padding-left: 12px;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    width: 100px;
+    display: inline-block;
+}
+.namefields
+{
+    border: 2px solid #291b43;
+    border-radius: 5px;
+    margin: 10px;
+    width: 200px;
+    height: 25px;
+    padding: 1px 12px 1px 12px ;
+    font-family: "Montserrat", sans-serif;
+}
+.contactfields
+{
+    
+    border: 2px solid #291b43;
+    border-radius: 5px;
+    display:block;
+    margin: auto;
+    width: 90%;
+    height: 25px;
+    padding: 3px 12px 3px 12px ;
+    font-family: "Montserrat", sans-serif;
+    
+}
+.options
+{
+    height: 16px;
+    width: 16px;
+    padding: 10px;
+    cursor: pointer;
+    accent-color: green;
+}
+.radio-labels
+{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+}
+.textarea
+{
+    resize: vertical;
+    padding:3px 12px 3px 12px;
+    margin: auto;
+    display: block;
+    width: 90%;
+    height: 100px;
+    border: 2px solid #291b43;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+}
+.button
+{
+    width:95%;
+    margin: auto;
+    padding: 5px 7px 5px 7px;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: rgb(250, 241, 241);
+    background-color:rgb(45, 194, 25) ;
+    margin: 19px 19px;
+}
+.button:hover
+{
+    background-color:#1A7F37;
+}

@@ -36,27 +36,48 @@
             </nav>
         </header>
         <main>
-            <nav>
+            <nav class="sorting">
                 <ul class="sorting-options">
                     <li class="option">
-                        <button>
-                        events
-                        </button>
+                        <div class="dropdown">
+                            <button class="button">Events</button>
+                            <div class="dropitems">
+                                <button class="solar-eclipse">Solar Eclipse</button>
+                                <button class="lunar-eclipse">Lunar Eclipse</button>
+                                <button class="meteor-showers">Meteor Showers</button>
+                                <button class="blue-moon">Blue Moon</button>
+                                <button class="supermoon">Supermoon</button>
+                                <button class="planetary-alignments">Planetary Alignments</button>
+                                <button class="comet-appearances">Comet Appearances</button>
+                                <button class="auroras">Auroras</button>
+                                <button class="equinoxes">Equinoxes</button>
+                                <button class="solstices">Solstices</button>
+                                <button class="planetary-oppositions">Planetary Oppositions</button>
+                                <button class="transits">Transits of Planets</button>
+                                <button class="occultations">Occultations</button>
+                                <button class="conjunctions">Conjunctions</button>
+                            </div>
+                        </div>
                     </li>
                     <li class="option">
                         <button>
                         From
+                        
+                        <i class="fa-solid fa-caret-down"></i>
                         </button>
                     </li>
                     <li class="option">
                         <button>
                         To
+                        
+                        <i class="fa-solid fa-caret-down"></i>
                         </button>
                     </li>
+                    
                 </ul>
             </nav>
-            <div class="result">
 
+            <div class="result">
             </div>
         </main>
         <footer>

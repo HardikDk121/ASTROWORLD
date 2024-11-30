@@ -1,0 +1,94 @@
+main{
+    background-image: url('/images/background-images/vecteezy_colorful-space-galaxy-background-with-shining-stars-stardust-and-nebula_1184087/Galaxy\ Space\ BG_0001-01.jpg');
+    background-size: cover;
+    overflow-y: scroll;    
+}
+h1{
+    font-size: 4rem;
+    box-shadow:  5px 5px 4px black;
+    font-weight:lighter;
+}
+.aboutpage
+{
+    font-size: 2rem;
+    background-color:rgba(0, 0, 0, 0.406);
+    width:50%;
+    margin:auto;
+    padding: 20px;
+}
+h2{
+    font-size: 2rem;
+    box-shadow:  5px 5px 4px black;
+}
+h3{
+    font-size: 1.5rem;
+}
+.desc
+{
+    display:flex;
+}
+.pfp
+{
+    border: 5px solid black;
+    border-radius: 7px;
+    margin: 20px;
+}
+.details p
+{
+    font-size: 1.5rem;
+}
+.education
+{
+    width: 25%;
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);   
+    grid-template-rows: auto repeat(4, auto);
+    
+    gap: 20px;
+    grid-template-areas: 
+    "title title title title"
+    "name program passing-year grade "
+    "mu cell cell cell"
+    "mu cell cell cell";
+    margin:10px;
+    text-align: center;
+}
+.education > *
+{
+    border: 5px solid rgba(196, 188, 196, 0.752);
+    border-radius: 5px;
+    background-color: rgba(165, 42, 42, 0.449);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.education > :not(.title)
+{
+    font-size: 1.2rem;
+}
+.title {
+    grid-area: title;
+    margin-bottom: 0px;
+}
+
+.name {
+    grid-area: name;
+
+}
+.program
+{
+    grid-area: program;
+}
+.passing-year {
+    grid-area: passing-year;
+}
+
+.grade {
+    grid-area: grade;
+}
+.mu
+{
+    grid-row: 3/5;
+    text-align: center;   
+    
+}
+
