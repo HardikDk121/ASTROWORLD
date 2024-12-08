@@ -1,0 +1,81 @@
+body
+{
+    color: white;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: 0.5fr, repeat(4,1fr);
+    margin: 0px;
+    background-image: url('/images/background-images/planet-space-cartoon-vector-icon-illustration-science-technology-icon-isolated-flat-vector/89dbdf7b-61c3-4ec9-82c1-4bd153d84603.jpg');
+    background-clip: inset;
+    background-size: cover;
+    
+}
+
+.month
+{
+    grid-row: 1 / 1;
+    grid-column: 1 / 11;
+    font-size: 3rem;
+    
+    
+}
+.day-container
+{
+    grid-row: 2 / 8;
+    grid-column: 1 / 11;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    
+}
+.monthbuttons:hover
+{    
+    color: #dc3545;
+}
+.day
+{
+    
+    border: 1px solid white;
+    border-radius: 5px;  
+    background-color: rgba(6, 4, 4,0.5);
+    color: white;
+    margin: 20px 20px;
+    
+}
+
+.date
+{
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+    box-shadow: 2px 2px 2px white;
+    background-color: rgba(0, 0, 0, .5);
+    
+}
+.events
+{
+    margin: auto;
+    width: 80%;   
+}
+.event
+{
+    padding: auto;
+    background-color: rgb(10, 8, 63);
+
+    border-radius: 5px;
+    color: white;
+    font-size: smaller;
+    transition: .4s;
+    
+}
+.event:hover
+{
+    transform: translateY(-0.3rem);
+    scale:1.05;
+    cursor: pointer;
+
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/layout.css">
+    <style>
+
+        .events
+        {
+            background-color:  #485bb5;
+            display:grid;
+            width: 50vw;
+            height: 50vh;
+            margin: auto;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 10px 10px 10px black;
+        }
+        h1{
+            text-align: center;
+            font-weight: bold;
+            
+
+        }
+        label{
+            background-color:#8dbecf;
+            border: 3px solid black;
+            border-radius: 5px;
+            display:inline-block;
+            width: fit-content;
+            padding: 10px;
+            margin: 5px;
+        }
+        input
+        {
+            accent-color:rgb(56, 50, 50) ;
+            
+        }
+        body
+        {
+            background-image: url('/images/background-images/illsutration-space-science/17892.jpg');
+            background-size: cover;
+            font-family: "Montserrat", 'sans-serif';
+    
+        }
+    </style>
+</head>
+<body>
+    <dialog class="events" open>
+        <form action="">
+            <h1>Select events</h1>
+            <label>
+                <input type="checkbox" class="solar-eclipse"> Solar Eclipse
+            </label>
+            <label>
+                <input type="checkbox" class="lunar-eclipse"> Lunar Eclipse
+            </label>
+            <label>
+                <input type="checkbox" class="meteor-showers"> Meteor Showers
+            </label>
+            <label>
+                <input type="checkbox" class="blue-moon"> Blue Moon
+            </label>
+            <label>
+                <input type="checkbox" class="supermoon"> Supermoon
+            </label>
+            <label>
+                <input type="checkbox" class="planetary-alignments"> Planetary Alignments
+            </label>
+            <label>
+                <input type="checkbox" class="comet-appearances"> Comet Appearances
+            </label>
+            <label>
+                <input type="checkbox" class="auroras"> Auroras
+            </label>
+            <label>
+                <input type="checkbox" class="equinoxes"> Equinoxes
+            </label>
+            <label>
+                <input type="checkbox" class="solstices"> Solstices
+            </label>
+            <label>
+                <input type="checkbox" class="planetary-oppositions"> Planetary Oppositions
+            </label>
+            <label>
+                <input type="checkbox" class="transits"> Transits of Planets
+            </label>
+            <label>
+                <input type="checkbox" class="occultations"> Occultations
+            </label>
+            <label>
+                <input type="checkbox" class="conjunctions"> Conjunctions
+            </label>
+            <br>
+            <input type="submit" value="Apply">
+        </form>
+    </dialog>
+      
+      
+</body>
+</html>

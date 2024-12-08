@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/index.css">
+
+    <!-- 
+        <script src="/js/layout.js"></script>
+        <script src="/js/scripts.js" defer></script>
+    -->
+
+    <script src="https://kit.fontawesome.com/ebceefdc6a.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <%- include('header') %>
+        <main>
+            <h1 class="heading">ASTROWORLD</h1>
+
+            <p class="description">a space event calendar</p>
+
+            <div class="buttonclass">
+                <a href="/html/calendar.html" class="buttons"><span>Go to calender </span><img
+                        src="/images/logo/calendar.png" class="logo"></a>
+                <a href="/html/sort.html" class="buttons"><span>sort by events </span> <img src="/images/logo/bars.png"
+                        class="logo"></a>
+            </div>
+
+        </main>
+        
+        <%- include('footer') %>
+      
+    </div>
+
+</body>
+
+</html>
