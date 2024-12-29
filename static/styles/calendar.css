@@ -26,8 +26,8 @@ body
     grid-row: 2 / 8;
     grid-column: 1 / 11;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: auto;
     
 }
 .monthbuttons:hover
@@ -48,7 +48,7 @@ body
 .date
 {
     width: 80%;
-    height: fit-content;
+    min-height: fit-content;
     margin: auto;
     text-align: center;
     font-size: 2rem;

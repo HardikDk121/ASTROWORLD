@@ -23,6 +23,8 @@ main
     background-image: url('/images/background-images/color-space-doodle/19333447.jpg');
     background-size:cover;
     align-content: center;
+    min-height: fit-content;
+
 }
 .heading
 {

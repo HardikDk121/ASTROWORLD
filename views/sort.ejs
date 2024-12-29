@@ -6,115 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sort </title>
     <script src="https://kit.fontawesome.com/ebceefdc6a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/layout.css">
-    <link rel="stylesheet" href="/css/sort.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/sort.css">
+    <script src="scripts/sort.js" defer></script>
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <nav class="headernav ">
-                <ul class="links headerlinks">
-                    <li class="link headerlink">
-                    <a href="/html/index.html">Home</a>
-                </li>
-                <li class="link headerlink">
-                    <a href="/html/calendar.html">calendar</a>
-                </li>
-                <li class="link headerlink">
-                    <a href="/html/sort.html">sort by events</a>
-                </li>
-                
-                <li class="link headerlink">
-                    <a href="/html/aboutus.html">About us</a>
-                </li>
-                <li class="link headerlink">
-                    <a href="/html/contactus.html">Contact us</a>
-                </li>
-                
-                </ul>
-            </nav>
-        </header>
+
+        <%- include('header') %>
+        
         <main>
             <nav class="sorting">
                 <ul class="sorting-options">
                     <li class="option">
-                        <div class="dropdown">
-                            <button class="button">Events</button>
-                            <div class="dropitems">
-                                <button class="solar-eclipse">Solar Eclipse</button>
-                                <button class="lunar-eclipse">Lunar Eclipse</button>
-                                <button class="meteor-showers">Meteor Showers</button>
-                                <button class="blue-moon">Blue Moon</button>
-                                <button class="supermoon">Supermoon</button>
-                                <button class="planetary-alignments">Planetary Alignments</button>
-                                <button class="comet-appearances">Comet Appearances</button>
-                                <button class="auroras">Auroras</button>
-                                <button class="equinoxes">Equinoxes</button>
-                                <button class="solstices">Solstices</button>
-                                <button class="planetary-oppositions">Planetary Oppositions</button>
-                                <button class="transits">Transits of Planets</button>
-                                <button class="occultations">Occultations</button>
-                                <button class="conjunctions">Conjunctions</button>
-                            </div>
-                        </div>
+                        <button class="buttons" id="open-event-modal">Events</button>
                     </li>
                     <li class="option">
-                        <button>
-                        From
-                        
-                        <i class="fa-solid fa-caret-down"></i>
-                        </button>
-                    </li>
-                    <li class="option">
-                        <button>
-                        To
-                        
-                        <i class="fa-solid fa-caret-down"></i>
-                        </button>
+                        <button class="buttons" id="open-date-modal">Date</button>
                     </li>
                     
+
                 </ul>
             </nav>
+            <dialog class="events" id="event-modal">
+                <form action="" method="get">
+                    <h1>Select events</h1>
+                    <label>
+                        <input type="checkbox" class="solar-eclipse" name="solar_eclipse"> Solar Eclipse
+                    </label>
+                    <label>
+                        <input type="checkbox" class="lunar-eclipse" name="lunar_eclipse"> Lunar Eclipse
+                    </label>
+                    <label>
+                        <input type="checkbox" class="meteor-showers" name="meteor_showers"> Meteor Showers
+                    </label>
+                    <label>
+                        <input type="checkbox" class="blue-moon" name="blue_moon"> Blue Moon
+                    </label>
+                    <label>
+                        <input type="checkbox" class="supermoon" name="supermoon"> Supermoon
+                    </label>
+                    <label>
+                        <input type="checkbox" class="planetary-alignments" name="planetary_alignments"> Planetary Alignments
+                    </label>
+                    <label>
+                        <input type="checkbox" class="comet-appearances" name="comet_appearances"> Comet Appearances
+                    </label>
+                    <label>
+                        <input type="checkbox" class="auroras" name="auroras"> Auroras
+                    </label>
+                    <label>
+                        <input type="checkbox" class="equinoxes" name="equinoxes"> Equinoxes
+                    </label>
+                    <label>
+                        <input type="checkbox" class="solstices" name="solstices"> Solstices
+                    </label>
+                    <label>
+                        <input type="checkbox" class="planetary-oppositions" name="planetary_oppositions"> Planetary Oppositions
+                    </label>
+                    <label>
+                        <input type="checkbox" class="transits" name="transits_of_planets"> Transits of Planets
+                    </label>
+                    <label>
+                        <input type="checkbox" class="occultations" name="occultations"> Occultations
+                    </label>
+                    <label>
+                        <input type="checkbox" class="conjunctions" name="conjunctions"> Conjunctions
+                    </label>
 
+                    <br>
+                    <br>
+                    <button type="submit" class="apply dialogbuttons"><i class="fa-regular fa-circle-check"></i> apply</button>
+                    <button id="close-event-modal" class="close dialogbuttons" type="button"><i class="fa-regular fa-circle-xmark"></i> close</button>
+                </form>
+            </dialog>
+            <dialog class="date-modal" id="date-modal">
+                <form action="" method="get" id="date-form">
+                    <label for="from" class="datelabel">from :
+                        <input type="date" name="from" id="date-from" >
+                    </label>
+                    <br>
+                    <label for="to" class="datelabel">to :
+                        <input type="date" name="to" id="date-to">
+                    </label> 
+                    <br>
+                    <button class="apply dialogbuttons"><i class="fa-regular fa-circle-check"></i> apply</button>
+                    <button id="close-date-modal" class="close dialogbuttons" type="button"><i class="fa-regular fa-circle-xmark"></i> close</button>
+                </form>
+            </dialog>
             <div class="result">
+                
             </div>
         </main>
-        <footer>
-            <nav class="credits">
-                <p>Credtis:</p>
-                <ul>
-                    <li><a href="http://www.freepik.com" class="credit">Footer design by tartila / Freepik</a></li>
-                    <li>
-                        <a href="" class="credit">
-                            <i class="fa-regular fa-font-awesome"></i> <span> Font awsome </span>  </a>
-                        </li>
-                    <li>
-                        <a href="https://www.flaticon.com" class="credit">
-                            <img src="/images/logo/flaticon.png" alt="Flaticon logo" height="16px" width="16px"> <span> Flaticon </span> 
-                        </a>
-                    </li>
-                    
-                </ul>
-            </nav>
-
-            <nav class="socials-media">
-                <ul class="links socials">
-                    
-                    <li class="link social">
-                        <a href=""><i class="fa-brands fa-linkedin icon"></i></a>
-                    </li>
-                    <li class="link social">
-                        <a href=""><i class="fa-brands fa-square-github icon"></i></a>
-                    </li>
-                    <li class="link social">
-                        <a href=""><i class="fa-brands fa-instagram icon"></i></a>
-                    </li>
-                </ul>
-            </nav>
-        </footer>
-    </div>
-
+        
+        <%- include('footer') %>
 </body>
 
 </html>

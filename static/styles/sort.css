@@ -22,77 +22,117 @@ main::-webkit-scrollbar
     justify-content: left;
     background-color:#f9f6ee5f;
     border-radius: 0.652rem;  
-    
+    padding: 0px;
 }
 .option
 {
     
-    width: 10%;
+    font-family: var(--Montserrat);
+    width: 50%;
     height: fit-content;
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
-    margin: 10px;   
-}
-.dropdown {
-    display: inline-block;
-    position: relative; /* Ensure dropdown content is positioned correctly */
+    margin: 10px;
 }
 
-.button {
-    padding: 10px 20px;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Show dropdown when hovering over the parent */
-.dropdown:hover .dropitems {
-    display: block;
-}
-
-.dropitems {
-    display: none; /* Initially hidden */
-    position: absolute; /* Positioned relative to the dropdown button */
-    top: 100%; /* Position it below the button */
-    left: 0;
-    width: 200px; /* Adjust the width to fit content */
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.dropitems button {
-    padding: 10px;
-    background-color: rgba(80, 6, 46);
-
-    text-align: left;
-    width: 100%;
-    cursor: pointer;
-}
-
-.dropitems button:hover {
-    
-    color: white;
-}
-button
+.buttons
 {
-   cursor: pointer;
+   
    padding: 4px  16px;
    font-family: inherit;
    font-size: 1.5rem;
    height: 100%;
    width:100%;
    color: white;
-   background-color: rgba(80, 6, 46);
+   background-color: rgb(80, 70, 70);
    border: 2px solid rgb(44, 18, 34);
-   border-radius: .625rem;
+   transition-duration: 250ms;
 }
-button:hover
+.buttons:hover
 {
     cursor: pointer;
+    background-color: rgb(116, 107, 107);
+}
+.events
+{
+    background-color:  #485bb5;
+    display: flex;
+    grid-template-columns: repeat(4 ,1fr);
+    grid-template-rows: auto;
+    width: 50vw;
+    max-height: 50vh;
+    min-height: fit-content;
+    margin: auto;
+    padding: 20px;
+    border: 0px;
+    border-radius: 2px;
+    box-shadow: 5px 5px 5px black; 
+    display: none;
+    
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-family:var(--Montserrat) ;
+}
+label{
+    font-family: var(--Montserrat);
+    background-color:#8dbecf;
+    border: 3px solid black;
+    border-radius: 5px;
+    display:inline-block;
+    width: fit-content;
+    padding: 10px;
+    margin: 5px;
+    
+}
+input[type="checkbox"]
+{
+    accent-color:rgb(56, 50, 50) ;
+}
+label:hover
+{
+    cursor: pointer;
+    background-color: #6e9dbf;
+}
+input[type="date"]
+{
+    font-family: var(--Montserrat);
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px;
+}
+.datelabel
+{
+    width: 250px;
+}
+.dialogbuttons
+{
+    min-width: fit-content;
+    padding: 10px;
+    font-family: "Montserrat", 'sans-serif';
+    color: azure;    
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 5px;
+}
+.apply
+{
+    background-color: rgb(7, 205, 63);
+}
+.apply:hover
+{
+    cursor: pointer;
+    background-color: rgb(7, 137, 44);
+}
+.close
+{
+    background-color: rgb(209, 50, 50);
+}
+.close:hover
+{
+    background-color: rgb(123, 21, 21);
 }
