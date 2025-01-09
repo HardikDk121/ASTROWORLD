@@ -10,11 +10,8 @@
     <link rel="stylesheet" href="styles/sort.css">
     <script src="scripts/sort.js" defer></script>
 </head>
-
 <body>
-
-        <%- include('header') %>
-        
+        <%- include('header') %>  
         <main>
             <nav class="sorting">
                 <ul class="sorting-options">
@@ -24,12 +21,10 @@
                     <li class="option">
                         <button class="buttons" id="open-date-modal">Date</button>
                     </li>
-                    
-
                 </ul>
             </nav>
             <dialog class="events" id="event-modal">
-                <form action="" method="get">
+                <form action="" method="get" id="event-form">
                     <h1>Select events</h1>
                     <label>
                         <input type="checkbox" class="solar-eclipse" name="solar_eclipse"> Solar Eclipse
@@ -78,25 +73,41 @@
                     <br>
                     <button type="submit" class="apply dialogbuttons"><i class="fa-regular fa-circle-check"></i> apply</button>
                     <button id="close-event-modal" class="close dialogbuttons" type="button"><i class="fa-regular fa-circle-xmark"></i> close</button>
+                
                 </form>
             </dialog>
             <dialog class="date-modal" id="date-modal">
                 <form action="" method="get" id="date-form">
                     <label for="from" class="datelabel">from :
-                        <input type="date" name="from" id="date-from" >
+                        <input type="date" name="dateFrom" id="date-from" required>
                     </label>
                     <br>
                     <label for="to" class="datelabel">to :
-                        <input type="date" name="to" id="date-to">
+                        <input type="date" name="dateTo" id="date-to" required>
                     </label> 
                     <br>
-                    <button class="apply dialogbuttons"><i class="fa-regular fa-circle-check"></i> apply</button>
+                    <button class="apply dialogbuttons" type="submit"><i class="fa-regular fa-circle-check"></i> apply</button>
                     <button id="close-date-modal" class="close dialogbuttons" type="button"><i class="fa-regular fa-circle-xmark"></i> close</button>
                 </form>
             </dialog>
             <div class="result">
-                
+                <% eventsData.forEach(event => { %>
+                    <div class="date">
+                      <h1 class="card-heading">
+                        <% event.date = new Date(event.date); %>
+                        <% event.date = event.date.toLocaleDateString('en-IN', { year: 'numeric', month: 'numeric', day: '2-digit' }) %>
+                        <%= event.date %></h1> <!-- Render date -->
+                      <div class="event-container">
+                        <% event.events.forEach(eventName => { %>
+                          <p class="event"><%= eventName %></p> <!-- Render each event -->
+                        <% }) %>
+                      </div>
+                    </div>
+                  <% }) %>
+
+
             </div>
+
         </main>
         
         <%- include('footer') %>

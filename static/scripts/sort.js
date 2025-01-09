@@ -6,8 +6,6 @@ const openDateModal = document.getElementById('open-date-modal');
 const closeDateModal = document.getElementById('close-date-modal');
 const dateModal = document.getElementById('date-modal');
 
-
-
 const dateFrom = document.getElementById('date-from');
 const dateTo = document.getElementById('date-to');
 

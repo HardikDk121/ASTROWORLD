@@ -136,3 +136,61 @@ input[type="date"]
 {
     background-color: rgb(123, 21, 21);
 }
+
+.result
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(auto-fill, 1fr);
+    gap: 1rem;
+    margin: 1rem 0px 1rem ;
+    box-sizing: border-box;
+    align-items:start;
+    padding: 0px;
+    height: inherit;
+    
+        
+}
+.date
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+    color: black;
+    border-radius: 3px;
+    background-color: rgb(80, 143, 185);  
+    box-shadow:3px 3px rgba(0,0,0,0.5);
+    backdrop-filter: blur(2px);
+    
+    
+}
+.card-heading
+{
+    grid-column: 1/span 1;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 2.5rem;  
+    background-color: rgb(185, 122, 80);      
+}
+.event-container
+{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+.event
+{
+    margin: 0px;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: rgba(255,255,255,.9);
+    margin: 5px;
+    padding: 0px;
+    border-radius: 5px;
+    
+}
