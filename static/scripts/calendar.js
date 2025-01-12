@@ -1,4 +1,5 @@
 
+
 const monthname = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 
@@ -15,48 +16,78 @@ function updateMonthDays(monthIndex, year) {
     
     // Get the number of days in the selected month.
     var daysInMonth = getDaysInMonth(monthIndex, year);
-
+    fetch(`/api/events?month=${monthIndex+1}&year=${year}`)
+    .then(response =>
+    {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(jsondata =>{
+        console.log( typeof jsondata);
+        return JSON.parse(jsondata);
+    })
+    .then(data =>
+        {
+            console.log(data);
+            var container = document.getElementById('day-container'); // Assuming you have a container for the day divs.
+            container.innerHTML = ' '; // Clear previous divs.
+        
+            // Generate the new divs for each day in the selected month.
+            for (let i = 1; i <= daysInMonth; i++) {
+                var dayDiv = document.createElement('div');
+                dayDiv.classList.add('day');
+                dayDiv.innerHTML = '<p class="date">'+i + '</p>';
+                
+                
+                var eventsDiv = document.createElement('div');
+                eventsDiv.classList.add('events');
+                let empty = true;
+                for (let j = 0; j < data.length; j++)
+                {
+                    let date =parseInt(data[j].date.slice(3,5));
+                    console.log(typeof date);
+                    if (date === i)
+                    {
+                        empty=false;
+                        data[j].events.forEach(event => {
+                            var eventDiv = document.createElement('p');
+                            eventDiv.classList.add('event');
+                            eventDiv.textContent = event;
+                            eventsDiv.appendChild(eventDiv);
+                        });    
+                    }
+                }
+                if (empty)
+                    {
+                        var img = document.createElement('img');
+                        img.src='/images/logo/face-unamused.png';
+                        img.width = 50;
+                        img.height = 50;
+                        eventsDiv.appendChild(img);
+                }
+                // Create the first event (Eclipse)
+                
+        
+                dayDiv.appendChild(eventsDiv);
+                
+                container.appendChild(dayDiv);
+            }
+            
+            // Update the display for month and year (assuming you have a year element)
+            document.getElementById('currentMonth').textContent = monthname[monthIndex];
+            document.getElementById('currentYear').textContent = year;
+        })
+    .catch(error => console.error('Error:', error))
     // Clear the existing divs and add new ones based on the number of days.
-    var container = document.getElementById('day-container'); // Assuming you have a container for the day divs.
-    container.innerHTML = ' '; // Clear previous divs.
-
-    // Generate the new divs for each day in the selected month.
-    for (var i = 1; i <= daysInMonth; i++) {
-        var dayDiv = document.createElement('div');
-        dayDiv.classList.add('day');
-        dayDiv.innerHTML = '<p class="date">'+i + '</p>';
-        
-        
-        var eventsDiv = document.createElement('div');
-        eventsDiv.classList.add('events');
-        
-        // Create the first event (Eclipse)
-        var event1 = document.createElement('p');
-        event1.classList.add('event');
-        event1.textContent = 'Eclipse';
-
-        // Create the second event (Meteor shower)
-        var event2 = document.createElement('p');
-        event2.classList.add('event');
-        event2.textContent = 'meteor shower';
-
-        eventsDiv.appendChild(event1);
-        eventsDiv.appendChild(event2);
-
-        dayDiv.appendChild(eventsDiv);
-        
-        container.appendChild(dayDiv);
-    }
-    
-    // Update the display for month and year (assuming you have a year element)
-    document.getElementById('currentMonth').textContent = monthname[monthIndex];
-    document.getElementById('currentYear').textContent = year;
 }
 
 
 document.addEventListener('DOMContentLoaded', function() {
     var today = new Date(); // Get the current date
     updateMonthDays(today.getMonth(), today.getFullYear()); // Call getFullYear() with parentheses
+    
 });
 
 
