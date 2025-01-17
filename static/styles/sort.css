@@ -2,16 +2,18 @@ main
 {
     background-image: url('/images/background-images/illsutration-space-science/17892.jpg');
     background-size:cover;
-    background-blend-mode:hue;
+  
 }
 main::-webkit-scrollbar
 {
     display: none;    
 }
+
 .sorting
 {
     height: 10%;
     width: 100%;
+
 }
 .sorting-options
 {

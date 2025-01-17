@@ -63,10 +63,10 @@ function updateMonthDays(monthIndex, year) {
                     {
                         var img = document.createElement('img');
                         img.src='/images/logo/face-unamused.png';
-                        img.width = 50;
-                        img.height = 50;
+                        img.style.width = '100%';
+                        img.style.height='100%';
                         eventsDiv.appendChild(img);
-                }
+                    }
                 // Create the first event (Eclipse)
                 
         

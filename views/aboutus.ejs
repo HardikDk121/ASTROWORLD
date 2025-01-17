@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,44 +9,41 @@
     <link rel="stylesheet" href="styles/aboutus.css">
     <script src="https://kit.fontawesome.com/ebceefdc6a.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <%- include('header') %>
-    <main>
-        <h1>About website</h1>
-        <p class="aboutpage">ASTROWORLD is a mini project designed as a space event calendar, providing information and updates about celestial events. It highlights astronomical phenomena . The project aims to engage users by promoting interest in space exploration and astronomy.</p>
-        <div class="aboutdev">
-            <h2>about dev</h2>
-            <div class="desc">
-                <img src="/images/logo/luffyjpeg.jpeg" alt="" srcset="" class="pfp">
+        <main>
+            <section class="aboutwebsite">
+
+                <h1 class="heading">About website</h1>
+                <hr class="hr">
+                <p class="aboutpage">ASTROWORLD is a mini project designed as a space event calendar, providing
+                    information and updates about celestial events. It highlights astronomical phenomena . The project
+                    aims to engage users by promoting interest in space exploration and astronomy.
+                </p>
                 
-                <div class="details">
-                    <h3>My info</h3>
-                    <h3>Name : Hardik Khimsruiya</h3>
-                    <p>Email : hardik.d.k121@gmail.com </p>
-                    <p>Github : HardikDk121</p>
-                    <p>Age : 19 years old</p>
+            </section>
+            <section class="aboutdev">
+
+
+                <h2>about dev</h2>
+                <div class="basicinfo">
+                    <img src="/images/logo/luffy.jpg"  alt="" srcset="" class="pfp">
+
+                    <div class="details">
+                        <p class="detail">Hey what's up 👋 </p>
+                        <p class="detail">I'm Hardik Khimsruiya</p>
+                        <ul>
+                            <li class="detail">I live in Rajkot, a city in India.</li>
+                            <li class="detail">My email : hardik.d.k121@gmail.com </li>
+                            <li class="detail">My github profile : HardikDk121</li>
+                            <li class="detail">My age : 19 years old</li>
+                        </ul>
+                    </div>
                 </div>
-                
-                <div class="education">
-                    <h3 class="title">Education</h3>
-                    <div class="name">University name</div>
-                    <div class="program">Program</div>
-                    <div class="passing-year">Passing year</div>
-                    <div class="grade">Grade</div>
-                    <div class="mu">Marwadi university</div>
-                    <div class="cell">B-Tech</div>
-                    <div class="cell">2027</div>
-                    <div class="cell">-</div>
-                    <div class="cell">Diploma</div>
-                    <div class="cell">2024</div>
-                    <div class="cell">9.31/10 CGPA</div>
-                </div>
-                <div class="skills">
-                    <h3></h3>
-                </div>
-            </div>
-        </div>
-    </main>
-    <%- include('footer') %>
+            </section>
+        </main>
+        <%- include('footer') %>
 </body>
+
 </html>
