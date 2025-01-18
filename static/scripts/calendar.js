@@ -43,14 +43,13 @@ function updateMonthDays(monthIndex, year) {
                 
                 var eventsDiv = document.createElement('div');
                 eventsDiv.classList.add('events');
-                let empty = true;
                 for (let j = 0; j < data.length; j++)
                 {
                     let date =parseInt(data[j].date.slice(3,5));
                     console.log(typeof date);
                     if (date === i)
                     {
-                        empty=false;
+                        
                         data[j].events.forEach(event => {
                             var eventDiv = document.createElement('p');
                             eventDiv.classList.add('event');
@@ -59,14 +58,15 @@ function updateMonthDays(monthIndex, year) {
                         });    
                     }
                 }
-                if (empty)
+               /* if (empty)
                     {
                         var img = document.createElement('img');
                         img.src='/images/logo/face-unamused.png';
                         img.style.width = '100%';
                         img.style.height='100%';
+                        img.style.objectFit='cover';
                         eventsDiv.appendChild(img);
-                    }
+                    }*/
                 // Create the first event (Eclipse)
                 
         

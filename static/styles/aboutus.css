@@ -30,7 +30,7 @@ main::before
 }
 .aboutwebsite
 {
-    background-color: rgb(54, 69, 79);
+    background-color: rgb(59, 54, 79);
 }
 .aboutpage
 {
@@ -43,32 +43,29 @@ main::before
     padding: 10px;
     
 }
-h2{
-    font-family: var(--Montserrat);
-    font-size: 2rem;
-    box-shadow:  5px 5px 4px ;
-    font-weight: lighter;
-}
-h3{
-    font-size: 1.5rem;
-}
+
 .basicinfo
 {
     display: grid;
-    grid-template-columns:repeat(10 ,1fr);
-    grid-template-rows: 1fr ;
-
-    
-
+    grid-template-columns: repeat(10 , 1fr);
+    grid-template-rows:repeat(6 , 1fr); 
+    background-color:rgb(23, 34, 69);
+    gap: 20px;
+}
+.infoheading{
+    grid-column: 1/11;
+    grid-row: 1/2;
+    font-family: var(--Montserrat);
+    font-size: 2rem;
+    box-shadow:  5px 0px 5px ;
+    font-weight: lighter;
+    background-color:rgb(43, 60, 114); ;
 }
 .pfp
 {
-
-    grid-row: 1/2;
-    grid-column: 1/4;
-    border: 5px solid black;
-    border-radius: 7px;
-    
+    grid-column: 1/5;
+    grid-row: 2/7;
+    border-radius: 50%;
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -76,8 +73,10 @@ h3{
 }
 .details 
 {
-    grid-row:1/2;
     grid-column: 5/11;
+    grid-row: 2/7;
+    width: 100%;
+    height: 100%;
     font-size: 1.5rem;
     font-family: var(--Montserrat);
 }
@@ -86,8 +85,28 @@ h3{
     font-weight: bold;
     margin: 24px;
 }
-
-
+.detail a
+{
+    color:green;
+    transition:0.2s;
+}
+.detail a:hover
+{
+    color:darkgreen;
+}
+.knowmore
+{
+    background-color: white;
+    font-family: var(--Montserrat);
+    box-shadow: 10px 10px 0px black;
+    font-size: 1rem;
+    border-width: 0px;
+}
+.knowmore:hover {
+    transition: 0.5s;
+    background-color: rgb(130, 115, 115);
+    color: white;
+}
 
 
 
