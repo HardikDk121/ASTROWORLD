@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: repeat(10,1fr);
     grid-template-rows: repeat(10,1fr);
-    gap: 20px;
+    
     background-image: url('/images/background-images/planet-space-cartoon-vector-icon-illustration-science-technology-icon-isolated-flat-vector/89dbdf7b-61c3-4ec9-82c1-4bd153d84603.jpg');
     background-clip: inset;
     background-size: cover;
